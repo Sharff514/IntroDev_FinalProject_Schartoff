@@ -1,0 +1,1 @@
+Showcase_timer = 0;
