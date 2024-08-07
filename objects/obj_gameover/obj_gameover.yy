@@ -9,8 +9,8 @@
   "name":"obj_gameover",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Title Specific Objects",
+    "path":"folders/Objects/Title Specific Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

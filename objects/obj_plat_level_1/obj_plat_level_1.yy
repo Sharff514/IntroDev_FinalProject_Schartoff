@@ -10,8 +10,8 @@
   "name":"obj_plat_level_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Platform Objects",
+    "path":"folders/Objects/Platform Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

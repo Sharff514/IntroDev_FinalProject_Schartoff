@@ -179,8 +179,8 @@ if(y > camera_height)
 {
 	if(respawn_wait <= 0) {
 		respawn_wait = respawn_time;
+		obj_lives_UI.player_lives =- 1;
 	}
-	//player_lives = played_lives - 1;
 }
 
 if(respawn_wait > 0)
@@ -201,6 +201,4 @@ if(respawn_wait > 0)
 	}
 }
 
-//if(player_lives = 0){
-//	room_goto(rm_game_over)
-//}
+//if(obj_lives_UI.Player_lives =- 1);

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"global_variables",
+  "%Name":"global_fonts",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"global_variables",
+  "name":"global_fonts",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

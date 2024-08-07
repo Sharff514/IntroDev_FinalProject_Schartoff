@@ -9,8 +9,8 @@
   "name":"obj_cloud",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Platform Objects",
+    "path":"folders/Objects/Platform Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
