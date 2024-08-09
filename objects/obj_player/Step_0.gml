@@ -177,10 +177,17 @@ var camera_height = camera_get_view_y(view_camera[0]) + camera_get_view_height(v
 show_debug_message(respawn_wait);
 if(y > camera_height)
 {
+	if(!invincible) {
+		player_lives -= 1;
+		invincible = true;
+	}
 	if(respawn_wait <= 0) {
 		respawn_wait = respawn_time;
-		obj_lives_UI.player_lives =- 1;
 	}
+	if(player_lives = 0) {
+	room_goto(rm_game_over);
+	player_lives = 3;
+}
 }
 
 if(respawn_wait > 0)
@@ -201,4 +208,21 @@ if(respawn_wait > 0)
 	}
 }
 
-//if(obj_lives_UI.Player_lives =- 1);
+
+if(invincible) {
+	invincibility_timer++;
+	if(invincibility_timer > invincibility_duration) {
+		invincible = false;
+		second_chance_timer++;
+		invincibility_timer = 0;
+		if(y > camera_height && second_chance_timer < second_chance_duration) {
+			invincible = true;
+			second_chance_timer = 0;
+		} else if(second_chance_timer > second_chance_duration) {
+			second_chance_timer = 0;
+		}
+	}
+}
+
+show_debug_message(invincible);
+
