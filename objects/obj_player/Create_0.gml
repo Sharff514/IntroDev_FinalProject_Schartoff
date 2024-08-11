@@ -1,5 +1,5 @@
-bounce_animation = spr_player_jump;
-fall_animation = spr_p1;
+bounce_animation = spr_p1_v2;
+fall_animation = spr_p1_v2;
 
 
 bounce_vel = -10; //how high player bounces

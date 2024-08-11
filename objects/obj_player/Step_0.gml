@@ -50,6 +50,8 @@ if(to_move_x >= dist_to_r_wall) {
 	x += to_move_x;
 }
 
+
+
 //find the y direction that we're moving
 var dir = sign(to_move_y);
 
@@ -80,18 +82,19 @@ while(to_move_y != 0) {
 		} else {
 		
 			//COLLISION WITH platform
-			//set to a cloud that may be one pixel beneath me
-			collidewith = instance_place(x, y + dir, obj_plat_level_1);
+			//set to a platform that may be one pixel beneath me
+			collidewith = instance_place(x, y + dir, obj_crimson_plat);
 			//if we're going to collide w/ a cloud
 			if(collidewith != noone) {
 				//and if we've not already overlapped w/ that cloud
 				if(place_meeting(x, y, collidewith) == false) {
 					//track that we've hit something
 					colliding = true;
-					audio_play_sound(snd_platform_sound,false,0)
+					audio_play_sound(snd_crimson_bounce,false,0)
 					image_index = 0;
 				}
 			}
+			
 			
 			collidewith = instance_place(x, y + dir, obj_cloud);
 			//if we're going to collide w/ a cloud
@@ -100,35 +103,45 @@ while(to_move_y != 0) {
 				if(place_meeting(x, y, collidewith) == false) {
 					//track that we've hit something
 					colliding = true;
-					audio_play_sound(snd_platform_sound,false,0)
+					audio_play_sound(snd_cloud_bounce,false,0)
 					image_index = 0;
+					//where animation for platform goes
 				}
 			}
-			collidewith = instance_place(x, y + dir, obj_plat_level_2);
-			//if we're going to collide w/ a cloud
+			collidewith = instance_place(x, y + dir, obj_earth_plat);
 			if(collidewith != noone) {
-				//and if we've not already overlapped w/ that cloud
 				if(place_meeting(x, y, collidewith) == false) {
-					//track that we've hit something
 					colliding = true;
-					audio_play_sound(snd_platform_sound,false,0)
+					audio_play_sound(snd_grass_sound,false,0)
 					image_index = 0;
 				}
 			}
 			collidewith = instance_place(x, y + dir, obj_bird);
+			if(collidewith != noone) {
+				if(place_meeting(x, y, collidewith) == false) {
+					colliding = true;
+					audio_play_sound(snd_bird_bounce,false,0)
+					image_index = 0;
+					obj_bird.image_index = 8;
+				}
+			}
+			collidewith = instance_place(x, y + dir, obj_moon_plat);
 			//if we're going to collide w/ a cloud
 			if(collidewith != noone) {
 				//and if we've not already overlapped w/ that cloud
 				if(place_meeting(x, y, collidewith) == false) {
 					//track that we've hit something
 					colliding = true;
-					audio_play_sound(snd_platform_sound,false,0)
+					audio_play_sound(snd_cloud_bounce,false,0)
 					image_index = 0;
+					//where animation for platform goes
 				}
 			}
 		} 
 		
 	}
+	
+	
 	
 	//NO COLLISION
 	// if we're NOT colliding w/ anything
@@ -186,7 +199,7 @@ if(y > camera_height)
 	}
 	if(player_lives = 0) {
 	room_goto(rm_game_over);
-	player_lives = 3;
+	player_lives = 4;
 }
 }
 

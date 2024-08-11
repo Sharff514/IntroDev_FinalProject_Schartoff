@@ -1,1 +1,1 @@
-if(keyboard_check(vk_space)) room_goto_previous();
+if(keyboard_check_released(vk_space)) room_goto_previous();
