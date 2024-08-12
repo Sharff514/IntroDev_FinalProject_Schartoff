@@ -96,7 +96,7 @@ while(to_move_y != 0) {
 			}
 			
 			
-			collidewith = instance_place(x, y + dir, obj_cloud);
+			collidewith = instance_place(x, y + dir, obj_cloud_plat);
 			//if we're going to collide w/ a cloud
 			if(collidewith != noone) {
 				//and if we've not already overlapped w/ that cloud
@@ -123,6 +123,24 @@ while(to_move_y != 0) {
 					audio_play_sound(snd_bird_bounce,false,0)
 					image_index = 0;
 					obj_bird.image_index = 8;
+				}
+			}
+			collidewith = instance_place(x, y + dir, obj_bird_space_bird);
+			if(collidewith != noone) {
+				if(place_meeting(x, y, collidewith) == false) {
+					colliding = true;
+					audio_play_sound(snd_bird_bounce,false,0)
+					image_index = 0;
+					obj_bird_space_bird.image_index = 8;
+				}
+			}
+			collidewith = instance_place(x, y + dir, obj_bird_angel);
+			if(collidewith != noone) {
+				if(place_meeting(x, y, collidewith) == false) {
+					colliding = true;
+					audio_play_sound(snd_bird_bounce,false,0)
+					image_index = 0;
+					obj_bird_angel.image_index = 8;
 				}
 			}
 			collidewith = instance_place(x, y + dir, obj_moon_plat);
@@ -190,17 +208,18 @@ var camera_height = camera_get_view_y(view_camera[0]) + camera_get_view_height(v
 show_debug_message(respawn_wait);
 if(y > camera_height)
 {
-	if(!invincible) {
-		player_lives -= 1;
-		invincible = true;
+		if(!invincible) {
+			player_lives -= 1;				
+			invincible = true;
+		}
+		if(respawn_wait <= 0) {
+			respawn_wait = respawn_time;
+			audio_play_sound(snd_fallen,false,0)
+		}
+		if(player_lives = 0) {
+		room_goto(game_over_room);
+		player_lives = 3;
 	}
-	if(respawn_wait <= 0) {
-		respawn_wait = respawn_time;
-	}
-	if(player_lives = 0) {
-	room_goto(rm_game_over);
-	player_lives = 4;
-}
 }
 
 if(respawn_wait > 0)

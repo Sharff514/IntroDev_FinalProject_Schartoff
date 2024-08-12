@@ -9,7 +9,7 @@ accel = 0.5; //how fast player is
 //Respawn Timer
 
 respawn_wait = 0;//respawn timer
-respawn_time = 60;//when respawn happens (1 second)
+respawn_time = 30;//when respawn happens (1 second)
 
 invincible = false;
 invincibility_timer = 0;//timer for player invincibility when losing a life
@@ -21,6 +21,6 @@ invincibility_duration = 300;//limit for player invincibility
 second_chance_timer = 0;
 second_chance_duration = 120;
 
-player_lives = 4;
+player_lives = 3;
 
 beginning_invinciblity_timer = 0;

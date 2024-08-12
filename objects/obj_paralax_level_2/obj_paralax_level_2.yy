@@ -6,8 +6,8 @@
   "name":"obj_paralax_level_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"paralax",
+    "path":"folders/Objects/paralax.yy",
   },
   "parentObjectId":null,
   "persistent":false,

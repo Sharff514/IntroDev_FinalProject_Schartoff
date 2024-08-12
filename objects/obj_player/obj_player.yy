@@ -36,6 +36,7 @@
     {"$GMObjectProperty":"v1","%Name":"x_vel","filters":[],"listItems":[],"multiselect":false,"name":"x_vel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"r_x","filters":[],"listItems":[],"multiselect":false,"name":"r_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"next_level_title","filters":[],"listItems":[],"multiselect":false,"name":"next_level_title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_level_2_title","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"game_over_room","filters":[],"listItems":[],"multiselect":false,"name":"game_over_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_gameover_1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

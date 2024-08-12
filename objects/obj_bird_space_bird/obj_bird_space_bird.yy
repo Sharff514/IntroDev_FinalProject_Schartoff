@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bird_platforms",
-    "path":"sprites/spr_bird_platforms/spr_bird_platforms.yy",
+    "name":"spr_bird_space_platforms",
+    "path":"sprites/spr_bird_space_platforms/spr_bird_space_platforms.yy",
   },
   "spriteMaskId":null,
   "visible":true,

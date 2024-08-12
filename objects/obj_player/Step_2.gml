@@ -6,4 +6,4 @@ audio_play_sound(snd_level_warp,false,0);
 return;
 }
 
-if(keyboard_check_released(vk_tab))room_goto_previous()
+//if(keyboard_check_released(vk_tab))room_goto_previous()
