@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_paralax_level_1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_buddy_jesus",
+  "eventList":[],
   "managed":true,
-  "name":"obj_paralax_level_1",
+  "name":"obj_buddy_jesus",
   "overriddenProperties":[],
   "parent":{
-    "name":"paralax",
-    "path":"folders/Objects/paralax.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_buddy_Jesus",
+    "path":"sprites/spr_buddy_Jesus/spr_buddy_Jesus.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

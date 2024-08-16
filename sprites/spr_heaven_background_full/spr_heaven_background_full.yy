@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_heaven_background",
+  "%Name":"spr_heaven_background_full",
   "bboxMode":0,
   "bbox_bottom":1999,
   "bbox_left":0,
@@ -26,19 +26,19 @@
     {"$GMImageLayer":"","%Name":"5d67bd5a-cfe5-4e44-b24d-4a5f7c514e2b","blendMode":0,"displayName":"Layer 5","isLocked":false,"name":"5d67bd5a-cfe5-4e44-b24d-4a5f7c514e2b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"1710b9c2-ce0a-4966-8501-d44e297f228b","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"1710b9c2-ce0a-4966-8501-d44e297f228b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_heaven_background",
+  "name":"spr_heaven_background_full",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"level 3 background",
+    "path":"folders/Sprites/level 3 background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_heaven_background",
+    "%Name":"spr_heaven_background_full",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -62,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_heaven_background",
+    "name":"spr_heaven_background_full",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -74,7 +74,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4fe80dc4-3b9a-4bae-b28d-b36ddc3c861d","path":"sprites/spr_heaven_background/spr_heaven_background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4fe80dc4-3b9a-4bae-b28d-b36ddc3c861d","path":"sprites/spr_heaven_background_full/spr_heaven_background_full.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"573b214d-5d0f-4b40-b92a-66595632aa8d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
