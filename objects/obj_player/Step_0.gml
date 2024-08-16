@@ -122,7 +122,6 @@ while(to_move_y != 0) {
 					colliding = true;
 					audio_play_sound(snd_bird_bounce,false,0)
 					image_index = 0;
-					obj_bird.image_index = 8;
 				}
 			}
 			collidewith = instance_place(x, y + dir, obj_bird_space_bird);
@@ -131,7 +130,6 @@ while(to_move_y != 0) {
 					colliding = true;
 					audio_play_sound(snd_bird_bounce,false,0)
 					image_index = 0;
-					obj_bird_space_bird.image_index = 8;
 				}
 			}
 			collidewith = instance_place(x, y + dir, obj_bird_angel);
@@ -140,7 +138,6 @@ while(to_move_y != 0) {
 					colliding = true;
 					audio_play_sound(snd_bird_bounce,false,0)
 					image_index = 0;
-					obj_bird_angel.image_index = 8;
 				}
 			}
 			collidewith = instance_place(x, y + dir, obj_moon_plat);
