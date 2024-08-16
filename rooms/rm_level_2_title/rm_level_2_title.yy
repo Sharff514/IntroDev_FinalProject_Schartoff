@@ -21,8 +21,8 @@
   ],
   "name":"rm_level_2_title",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Titles",
+    "path":"folders/Rooms/Titles.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -35,10 +35,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":768,
+    "Height":900,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1366,
+    "Width":960,
   },
   "sequenceId":null,
   "views":[

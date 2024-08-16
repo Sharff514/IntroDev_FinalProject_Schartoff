@@ -232,7 +232,7 @@ if(respawn_wait > 0)
 		y=camera_height;//spawn y is the room height
 		
 		x_vel = (x-room_width*0.5) * random_range(0.1,0.2);
-		y_vel = -10;
+		y_vel = -14;
 		r_x = 0;
 		r_y = 0;
 		//audio_play_sound(snd_spawn,false,0)
@@ -254,6 +254,11 @@ if(invincible) {
 			second_chance_timer = 0;
 		}
 	}
+	if(floor(current_time/100)%2 == 0) {
+		image_alpha = 0.6;
+	}
+} else {
+	image_alpha = 1;
 }
 
 show_debug_message(invincible);

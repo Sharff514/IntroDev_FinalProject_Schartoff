@@ -1,3 +1,5 @@
+image_alpha = 1;
+
 bounce_animation = spr_p1_v2;
 fall_animation = spr_p1_v2;
 
